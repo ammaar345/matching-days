@@ -1,6 +1,22 @@
+body{
+    background-color: lightskyblue;
+}
 .weekdays{/*display: inline-block;*/
 border: 1px solid black;
-margin: auto;}
+margin: auto;
+padding: 4em;
+}
 .weekdays div{border:3px black solid;
-padding: 10px;
-display:inline-block};
+padding: 3em;
+width: fit-content;
+display:inline-block;
+margin: 1.4em;
+background-color: white
+ };
+.dateone,.datetwo{padding-bottom: 3em;
+background-color: red;}
+
+input[type="date"]{
+   padding: 1em;
+   display: inline;
+}
