@@ -1,0 +1,6 @@
+.weekdays{/*display: inline-block;*/
+border: 1px solid black;
+margin: auto;}
+.weekdays div{border:3px black solid;
+padding: 10px;
+display:inline-block};
