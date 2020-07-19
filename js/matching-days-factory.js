@@ -1,20 +1,21 @@
-function MatchingDays () {
-function CheckMatch(dateParam,dateParam2){
-var day1=new Date (dateParam);
-var day2=new Date(dateParam2);
-var day1Num=day1.getDay();
-var day2Num=day2.getDay();
-if (day1Num=day2Num)
-{return true
+function MatchingDays() {
+    function getDay(dateParam) {
+        var day1 = new Date(dateParam);
+        var day1Num = day1.getDay();
+        return day1Num;
+    }
+    function getDay2(dateParam2) {
 
-}
-else {return false
-}
+        var day2 = new Date(dateParam2);
 
-}
+        var day2Num = day2.getDay();
+        return day2Num;
+    }
+  
+    return {
+        getDay,
+        getDay2
 
-return {CheckMatch
-
-}
+    }
 
 }

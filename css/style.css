@@ -6,7 +6,7 @@ border: 1px solid black;
 margin: auto;
 padding: 4em;
 }
-.weekdays div{border:3px black solid;
+.mon,.tue,.wed,.thurs,.fri,.sat,.sun {border:3px black solid;
 padding: 3em;
 width: fit-content;
 display:inline-block;
@@ -20,3 +20,15 @@ input[type="date"]{
    padding: 1em;
    display: inline;
 }
+.blue{background-color: blue;
+}
+.orange{background-color: orange;
+}
+.red{background-color: red;
+    }
+
+.coral{background-color: coral;
+}
+.green{background-color: green;}
+.yellow{background-color: yellow;}
+.mag{background-color: magenta;}
