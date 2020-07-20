@@ -2,20 +2,20 @@ body{
     background-color: lightskyblue;
 }
 .weekdays{/*display: inline-block;*/
-border: 1px solid black;
+
 margin: auto;
 padding: 4em;
 }
-.mon,.tue,.wed,.thurs,.fri,.sat,.sun {border:3px black solid;
+/* .mon,.tue,.wed,.thurs,.fri,.sat,.sun {border:3px black solid;
 padding: 3em;
 width: fit-content;
 display:inline-block;
 margin: 1.4em;
 background-color: white
- };
-.dateone,.datetwo{padding-bottom: 3em;
-background-color: red;}
-
+ }; */
+/* .dateone,.datetwo{padding-bottom: 3em;
+background-color: red;} */
+table{border: 0.5px solid black;}
 input[type="date"]{
    padding: 1em;
    display: inline;
