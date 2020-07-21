@@ -8,14 +8,14 @@
     <title>Matching Days</title>
     <script type="text/x-template" class="color">
         <table>
-            {{#each matchdays.dayStyles()}}
-            <th><div class="sun" >{{day}}}</div>    </th>
-            <th><div class="mon" >{{day}}</div></th>
+            {{#each tempObj}}
+            <th><div class=" {{style}}" >{{day}}}</div>    </th>
+            <!-- <th><div class="mon" >{{day}}</div></th>
             <th><div class="tue" >{{day}}</div> </th>
             <th><div class="wed" >{{day}}</div></th>
             <th><div class="thurs" >{{day}}</div></th>
             <th><div class="fri" >{{day}}</div></th>
-            <th><div class="sat" >{{day}}</div></th>
+            <th><div class="sat" >{{day}}</div></th> -->
             {{/each}}  
                     </table>
         

@@ -2,20 +2,24 @@
  let matchdays=MatchingDays();
  var firstDate=document.querySelector(".date1");
  var secDate=document.querySelector(".date2");
- var sun=document.querySelector(".sun");
- var mon=document.querySelector(".mon");
- var tue=document.querySelector(".tue");
- var wed=document.querySelector(".wed");
- var thurs=document.querySelector(".thurs");
- var fri=document.querySelector(".fri");
- var sat=document.querySelector(".sat");
+//  var sun=document.querySelector(".sun");
+//  var mon=document.querySelector(".mon");
+//  var tue=document.querySelector(".tue");
+//  var wed=document.querySelector(".wed");
+//  var thurs=document.querySelector(".thurs");
+//  var fri=document.querySelector(".fri");
+//  var sat=document.querySelector(".sat");
  //////
- result.innerHTML=matchTemplate(matchdays.dayStyles())
+ var tempObj=matchdays.dayStyles()
+ 
 
 //  
-function check(){
+function change(){
    var firstVal=firstDate.value;
+   var secVal=secDate.value;
    matchdays.getDay(firstVal)
+   matchdays.getDay2(secVal)
+   result.innerHTML=matchTemplate(tempObj)
 
 }
    
@@ -52,12 +56,12 @@ function check(){
 
  
 
- function change(){
+//  function change(){
 
     
-    var secVal=secDate.value;
-    checkMatch(firstVal,secVal)
- }
+   
+
+//  }
  
- firstDate.addEventListener("change",check)
- secDate.addEventListener("change",check)
+ firstDate.addEventListener("change",change)
+ secDate.addEventListener("change",change)
