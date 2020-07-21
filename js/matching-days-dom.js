@@ -10,7 +10,8 @@
  var fri=document.querySelector(".fri");
  var sat=document.querySelector(".sat");
  //////
- //result.innerHTML=matchTemplate(matchdays.dayStyles())
+ result.innerHTML=matchTemplate(matchdays.dayStyles())
+
 //  
 function check(){
    var firstVal=firstDate.value;
