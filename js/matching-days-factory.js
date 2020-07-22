@@ -1,14 +1,14 @@
 function MatchingDays() {
-   var index;
-   var index2;
+   var dayindex;
+   var dayindex2;
     function getDay(day) {
-  index=day
+  dayindex=day
 
         
      
     }
     function getDay2(day2) {
-index2=day2;
+dayindex2=day2;
       
     }
 
@@ -20,8 +20,9 @@ index2=day2;
             , { day: "Thursday", style: "" }
             , { day: "Friday", style: "" }
             , { day: "Saturday", style: "" }]
- if (date===date2) {
-days[].style=""
+ if (dayindex & dayindex2 & date===date2) {
+days[index].style=" ";
+
  }     
 
        
