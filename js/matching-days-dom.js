@@ -10,15 +10,18 @@
 //  var fri=document.querySelector(".fri");
 //  var sat=document.querySelector(".sat");
  //////
- var tempObj=matchdays.dayStyles()
  
-
+ 
+ result.innerHTML=""
 //  
 function change(){
+   var tempObj=matchdays.dayStyles()
    var firstVal=firstDate.value;
    var secVal=secDate.value;
-   matchdays.getDay(firstVal)
-   matchdays.getDay2(secVal)
+  console.log(tempObj)
+  console.log( matchdays.getDayOfWeek(firstVal))
+ console.log(  matchdays.getDayOfWeek2(secVal))
+
    result.innerHTML=matchTemplate(tempObj)
 
 }

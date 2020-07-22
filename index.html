@@ -7,8 +7,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <title>Matching Days</title>
     <script type="text/x-template" class="color">
-            {{#each tempObj}}
-            <li class=" {{style}}" >{{day}}}  </li>
+            {{#each days}}
+            <li class=" {{style}}" >{{day}} </li>
             
             {{/each}}  
         
@@ -18,16 +18,11 @@
 </head>
 <body>
     <div class="weekdays">
-        <table>
-<th><div class="sun" >Sunday</div>    </th>
-<th><div class="mon" >Monday</div></th>
-<th><div class="tue" >Tuesday</div> </th>
-<th><div class="wed" >Wednesday</div></th>
-<th><div class="thurs" >Thursday</div></th>
-<th><div class="fri" >Friday</div></th>
-<th><div class="sat" >Saturday</div></th>
+<ul>
+
+</ul>
         
-        </table>
+        
 </div>
 <div class="dateone">
 <label for ="date1">1st date:</label> 

@@ -1,3 +1,3 @@
-var template=document.querySelector(".color").innerHTML;
-var result=document.querySelector(".weekdays");
-var matchTemplate=Handlebars.compile(template)
+var template = document.querySelector(".color").innerHTML;
+var matchTemplate = Handlebars.compile(template)
+var result = document.querySelector(".weekdays");
