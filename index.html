@@ -7,17 +7,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <title>Matching Days</title>
     <script type="text/x-template" class="color">
-        <table>
             {{#each tempObj}}
-            <th><div class=" {{style}}" >{{day}}}</div>    </th>
-            <!-- <th><div class="mon" >{{day}}</div></th>
-            <th><div class="tue" >{{day}}</div> </th>
-            <th><div class="wed" >{{day}}</div></th>
-            <th><div class="thurs" >{{day}}</div></th>
-            <th><div class="fri" >{{day}}</div></th>
-            <th><div class="sat" >{{day}}</div></th> -->
+            <li class=" {{style}}" >{{day}}}  </li>
+            
             {{/each}}  
-                    </table>
         
         <!-- <li class="plateStyle">{{this}}</li> -->
      
