@@ -15,11 +15,16 @@
  result.innerHTML=""
 //  
 function change(){
-   var tempObj=matchdays.dayStyles()
+   
    var firstVal=firstDate.value;
    var secVal=secDate.value;
+   var date=new Date(firstVal);
+   var date2=new Date(secVal);
+   var dayVal1=date.getDay();
+   var dayVal2=date2.getDay()
+   var tempObj=matchdays.dayStyles(dayVal1,dayVal2)
   console.log(tempObj)
-  console.log( matchdays.getDayOfWeek(firstVal))
+  console.log( matchdays.getDayOfWeek())
  console.log(  matchdays.getDayOfWeek2(secVal))
 
    result.innerHTML=matchTemplate(tempObj)
