@@ -20,15 +20,16 @@ dayindex2=day2;
             , { day: "Thursday", style: "" }
             , { day: "Friday", style: "" }
             , { day: "Saturday", style: "" }]
- if (dayindex & dayindex2 & dayindex===dayindex2) {
- days[dayindex].style="green";
-
- }   
- else if(dayindex & dayindex2 & !dayindex===dayindex2)
+ 
+  if(dayindex && dayindex2 && dayindex!==dayindex2)
  {
 days[dayindex].style="red";
 days[dayindex2].style="yellow"
- } 
+
+ } else if (dayindex && dayindex2 && dayindex===dayindex2) {
+    days[dayindex].style="green";
+   
+    }   
 
        
        

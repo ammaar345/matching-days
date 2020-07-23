@@ -6,6 +6,9 @@ body{
 margin: auto;
 padding: 4em;
 }
+.dates{display: flex;
+padding: 5px;}
+
 /* ul{display: inline-block} */
 li{display: inline-block;
 width: 6em;
@@ -17,19 +20,20 @@ display:inline-block;
 margin: 1.4em;
 background-color: white
  }; */
-/* .dateone,.datetwo{padding-bottom: 3em;
-background-color: red;} */
-table{border: 0.5px solid black;}
+ .dateone,.datetwo{padding-right: 1.5em;
+} 
+
 input[type="date"]{
-   padding: 1em;
-   display: inline;
+   
+   height: 2em
+   /* display: inline; */
 }
 .blue{background-color: blue;
 }
 .orange{background-color: orange;
 }
 .red{background-color: red;
-   color:red }
+   }
 
 .coral{background-color: coral;
 }

@@ -19,7 +19,7 @@ function change(){
    var date2=new Date(secVal);
    var dayVal1=date.getDay();
    var dayVal2=date2.getDay()
-   if(firstVal ){
+   if(firstVal){
    matchdays.setDayOfWeek(dayVal1)
    var tempObj=matchdays.dayStyles(/*dayVal1,dayVal2*/)}
    if (secVal){
