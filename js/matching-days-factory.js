@@ -1,17 +1,18 @@
 function MatchingDays() {
    var dayindex;
    var dayindex2;
-    function getDayOfWeek(day) {
+    function setDayOfWeek(day) {
   dayindex=day
         
     }
-    function getDayOfWeek2(day2) {
+    function setDayOfWeek2(day2) {
         
 dayindex2=day2;
 
     }
 
-    function dayStyles(date,date2) {
+    function dayStyles() {
+      
         const days = [{ day: "Sunday", style: "" }
             , { day: "Monday", style: "" },
         { day: "Tuesday", style: "" }
@@ -19,13 +20,14 @@ dayindex2=day2;
             , { day: "Thursday", style: "" }
             , { day: "Friday", style: "" }
             , { day: "Saturday", style: "" }]
- if (dayindex & dayindex2 & date===date2) {
+ if (dayindex & dayindex2 & dayindex===dayindex2) {
  days[dayindex].style="green";
-days[dayindex2].style="green"
- }   
- else if(dayindex & dayindex2 & !date===date2)
- {days[dayindex].style=
 
+ }   
+ else if(dayindex & dayindex2 & !dayindex===dayindex2)
+ {
+days[dayindex].style="red";
+days[dayindex2].style="yellow"
  } 
 
        
@@ -37,8 +39,8 @@ days[dayindex2].style="green"
 
     }
     return {
-        getDayOfWeek,
-        getDayOfWeek2,
+        setDayOfWeek,
+        setDayOfWeek2,
         dayStyles
     }
 

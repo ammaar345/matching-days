@@ -11,9 +11,6 @@
 //  var sat=document.querySelector(".sat");
  //////
  
- 
- result.innerHTML=""
-//  
 function change(){
    
    var firstVal=firstDate.value;
@@ -22,9 +19,14 @@ function change(){
    var date2=new Date(secVal);
    var dayVal1=date.getDay();
    var dayVal2=date2.getDay()
-   matchdays.getDayOfWeek(dayVal1)
-   matchdays.getDayOfWeek2(dayVal2)
-   var tempObj=matchdays.dayStyles(dayVal1,dayVal2)
+   if(firstVal ){
+   matchdays.setDayOfWeek(dayVal1)
+   var tempObj=matchdays.dayStyles(/*dayVal1,dayVal2*/)}
+   if (secVal){
+   matchdays.setDayOfWeek2(dayVal2)
+   var tempObj=matchdays.dayStyles(/*dayVal1,dayVal2*/)
+}
+   
   //console.log(tempObj)
   console.log( dayVal1)
  //console.log(  dayVal2)
