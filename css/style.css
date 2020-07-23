@@ -2,8 +2,9 @@ body{
     background-color: lightskyblue;
  width: 180em;
     margin: 2em;
-  
-   padding-left: 50em;
+   padding-left: 46em;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: medium;
    
 }
 .weekdays{/*display: inline-block;*/
@@ -12,12 +13,13 @@ margin: auto;
 padding: 4em;
 }
 .dates{display: flex;
-padding: 5px;}
+padding: 3em;}
 
 /* ul{display: inline-block} */
 li{display: inline-block;
 width: 6em;
-padding: 1em;}
+padding: 1em;
+color:  indigo;}
 /* .mon,.tue,.wed,.thurs,.fri,.sat,.sun {border:3px black solid;
 padding: 3em;
 width: fit-content;
@@ -29,19 +31,22 @@ background-color: white
 } 
 
 input[type="date"]{
-   
-   height: 2em
+   border-radius: 5px;
+   height: 2em;
+color:royalblue 
    /* display: inline; */
 }
 .blue{background-color: blue;
+
 }
 .orange{background-color: orange;
 }
 .red{background-color: red;
-   }
+    }
 
 .coral{background-color: coral;
 }
-.green{background-color: green;}
+.green{background-color: green;
+}
 .yellow{background-color: yellow;}
 .mag{background-color: magenta;}
