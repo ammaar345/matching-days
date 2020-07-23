@@ -1,5 +1,10 @@
 body{
     background-color: lightskyblue;
+ width: 180em;
+    margin: 2em;
+  
+   padding-left: 50em;
+   
 }
 .weekdays{/*display: inline-block;*/
 
