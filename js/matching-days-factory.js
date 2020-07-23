@@ -4,11 +4,11 @@ function MatchingDays() {
     function getDayOfWeek(day) {
   dayindex=day
         
-     
     }
     function getDayOfWeek2(day2) {
         
 dayindex2=day2;
+
     }
 
     function dayStyles(date,date2) {
@@ -20,9 +20,13 @@ dayindex2=day2;
             , { day: "Friday", style: "" }
             , { day: "Saturday", style: "" }]
  if (dayindex & dayindex2 & date===date2) {
- days[index].style="green";
+ days[dayindex].style="green";
+days[dayindex2].style="green"
+ }   
+ else if(dayindex & dayindex2 & !date===date2)
+ {days[dayindex].style=
 
- }    
+ } 
 
        
        

@@ -6,6 +6,10 @@ body{
 margin: auto;
 padding: 4em;
 }
+/* ul{display: inline-block} */
+li{display: inline-block;
+width: 6em;
+padding: 1em;}
 /* .mon,.tue,.wed,.thurs,.fri,.sat,.sun {border:3px black solid;
 padding: 3em;
 width: fit-content;

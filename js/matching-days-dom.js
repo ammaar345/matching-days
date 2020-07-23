@@ -22,12 +22,14 @@ function change(){
    var date2=new Date(secVal);
    var dayVal1=date.getDay();
    var dayVal2=date2.getDay()
+   matchdays.getDayOfWeek(dayVal1)
+   matchdays.getDayOfWeek2(dayVal2)
    var tempObj=matchdays.dayStyles(dayVal1,dayVal2)
-  console.log(tempObj)
-  console.log( matchdays.getDayOfWeek())
- console.log(  matchdays.getDayOfWeek2(secVal))
+  //console.log(tempObj)
+  console.log( dayVal1)
+ //console.log(  dayVal2)
 
-   result.innerHTML=matchTemplate(tempObj)
+ result.innerHTML=matchTemplate( { days : tempObj });
 
 }
    
