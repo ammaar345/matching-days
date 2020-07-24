@@ -20,24 +20,28 @@ function MatchingDays() {
             , { day: "Thursday", style: "" }
             , { day: "Friday", style: "" }
             , { day: "Saturday", style: "" }]
-        if ((dayindex === 0) || (dayindex2 === 0)) {
-            if (dayindex !== dayindex2) {
+       
+            if ((dayindex === 0) || (dayindex2 === 0)) {
+                if (dayindex !== dayindex2) {
+                    days[dayindex].style = "red";
+                    days[dayindex2].style = "yellow"
+                }
+                else if (dayindex === dayindex2) {
+                    days[dayindex].style = "green";
+                }
+            }
+            if (dayindex && dayindex2 && dayindex !== dayindex2) {
                 days[dayindex].style = "red";
                 days[dayindex2].style = "yellow"
-            }
-            else if (dayindex === dayindex2) {
+    
+            } else if (dayindex && dayindex2 && dayindex === dayindex2) {
                 days[dayindex].style = "green";
+    
             }
-        }
-        if (dayindex && dayindex2 && dayindex !== dayindex2) {
-            days[dayindex].style = "red";
-            days[dayindex2].style = "yellow"
 
-        } else if (dayindex && dayindex2 && dayindex === dayindex2) {
-            days[dayindex].style = "green";
+        
 
-        }
-
+console.log(days)
 
 
 
