@@ -55,16 +55,7 @@ else if (dayindex2){
 
             }
 
-
-
-
-
-
-
-
         return days;
-
-
     }
     return {
         setDayOfWeek,
