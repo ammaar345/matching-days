@@ -1,6 +1,6 @@
 function MatchingDays() {
-    var dayindex;
-    var dayindex2;
+    var dayindex=0;
+    var dayindex2=0;
     function setDayOfWeek(day) {
         dayindex = day
 
@@ -22,38 +22,18 @@ function MatchingDays() {
             , { day: "Saturday", style: "" }]
 
 
-        // if ((dayindex === 0) || (dayindex2 === 0)) {
-        //     if (dayindex) {
-        //         days[dayindex].style = "red";
+        if (dayindex === dayindex2) {
+            days[dayindex].style = "green";
 
-        //     }
-        //     else if (dayindex2) {
-        //         days[dayindex2].style = "yellow"
-        //     }
-        //     //    else if (dayindex !== dayindex2) {
-        //     //         days[dayindex].style = "red";
-        //     //         days[dayindex2].style = "yellow"
-        //     //     }
-        //     else if (dayindex === dayindex2) {
-        //         days[dayindex].style = "green";
-
-        //     }
-
-        // } else
-
-            if (dayindex && dayindex2 && dayindex !== dayindex2 ){
+        }
+            
+            else{
                 days[dayindex].style = "red";
                 days[dayindex2].style = "yellow"
-
+              
             }
            
-             else if (dayindex &&dayindex2 && dayindex === dayindex2) {
-                days[dayindex].style = "green";
-
-            }
-            // else if(dayindex2){
-
-            // }
+                
         return days;
     }
     return {
