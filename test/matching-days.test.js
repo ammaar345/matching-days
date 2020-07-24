@@ -70,6 +70,7 @@ describe("Testing styling day of week function.", function () {
         var date2Var = date2ndValue.getDay()
         matchingdays.setDayOfWeek(date1Var)
         matchingdays.setDayOfWeek2(date2Var)
+        console.log(matchingdays.dayStyles())
         assert.deepEqual([{ day: "Sunday", style: "yellow" }
             , { day: "Monday", style: "red" },
         { day: "Tuesday", style: "" }
@@ -77,6 +78,7 @@ describe("Testing styling day of week function.", function () {
             , { day: "Thursday", style: "" }
             , { day: "Friday", style: "" }
             , { day: "Saturday", style: "" }], matchingdays.dayStyles());
+            
     });
     it("should return green since the two dates occur on the same day of the week.", function () {
 
