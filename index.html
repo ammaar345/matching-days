@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/simple-grid.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <title>Matching Days</title>
     <script type="text/x-template" class="color">
@@ -17,21 +18,27 @@
             </script>
 </head>
 <body>
-    <div class="weekdays">
+    <div class="container">
+    
+        <div class="weekdays row">
+            
 <ul>
 
 </ul>
-        
+
         
 </div>
-<div class="dates" >
+<div class="row">
+<div class="dates " >
 <div class="dateone">
-<label for ="date1">1st date:</label> 
+<label for ="date1">First date:</label> 
 <input type="date" class="date1">
 </div>
 <div class="datetwo">
-<label for="date2">2nd date: </label>
+<label for="date2">Second date: </label>
 <input type="date" class="date2">
+</div>
+</div>
 </div>
 </div>
 <script src="js/template.js"></script>

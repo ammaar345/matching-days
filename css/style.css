@@ -1,8 +1,8 @@
 body{
     background-color: lightskyblue;
- width: 180em;
+ width: fit-content;
     margin: 2em;
-   padding-left: 46em;
+   padding:30px;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-size: medium;
    
@@ -27,9 +27,12 @@ display:inline-block;
 margin: 1.4em;
 background-color: white
  }; */
- .dateone,.datetwo{padding-right: 1.5em;
-} 
-
+ /* .dateone,.datetwo{padding-right: 10em;
+}  */
+label{
+   padding-right: 1.5em;
+   padding-left: 1.5em;
+}
 input[type="date"]{
    border-radius: 5px;
    height: 2em;
