@@ -28,8 +28,9 @@ function MatchingDays() {
         }
             
             else{
-                days[dayindex].style = "red";
                 days[dayindex2].style = "yellow"
+                days[dayindex].style = "red";
+                
               
             }
            
